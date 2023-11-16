@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/loginStyles.css" />
     <title>Login Page</title>
   </head>
   <body>
     <div id="container">
       <div id="login-box">
+        <h1>Login</h1>
         <form action="#">
-          <input type="text" placeholder="Username" />
-          <input type="text" placeholder="Password" />
+          <div id="inputs">
+            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Password" />
+          </div>
         </form>
+        <button>Login</button>
+        <div id="member">
+          Don't have an Account? <a href="signUp.html">Sign-Up Here</a>
+        </div>
       </div>
     </div>
   </body>

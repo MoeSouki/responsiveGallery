@@ -28,9 +28,16 @@
           </div>
           <br />
         </form>
-        <button>Sign Up</button>
-        <div id="member">Already Signed Up? <a href="#">Login Here</a></div>
+        <button onclick="submitForm()">Sign Up</button>
+        <div id="member">
+          Already Signed Up? <a href="login.html">Login Here</a>
+        </div>
       </div>
     </div>
+    <script>
+      function submitForm() {
+        window.location.href = "login.html";
+      }
+    </script>
   </body>
 </html>
