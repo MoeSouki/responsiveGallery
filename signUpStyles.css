@@ -12,11 +12,12 @@
 }
 
 #signUp {
-  width: 30%;
-  height: 10vh;
+  width: 50%;
+  height: 70vh;
   background-color: white;
   border-radius: 10px;
   display: inline-block;
-  margin-top: 30vh;
+  margin-top: 20vh;
   box-sizing: border-box;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
