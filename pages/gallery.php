@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/galleryStyles.css" />
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="../styles/galleryStyles.css">
 </head>
 <body>
-
+<div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="../cv.html">CV</a>
+      <a class="active" href="gallery.php">Gallery</a>
+      <a href="../contact-me.html">Contact Me</a>
+</div>
 <div id="gallery">
     <?php
     $jsonPath = '../paths.json';
@@ -47,7 +52,5 @@
     }
     ?>
 </div>
-</div>
-
 </body>
 </html>
