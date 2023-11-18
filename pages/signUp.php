@@ -71,7 +71,7 @@
           <button onclick="submitForm()">Sign Up</button>
         </form>
         <div id="member">
-          Already Signed Up? <a href="index.html">Login Here</a>
+          Already Signed Up? <a href="index.php">Login Here</a>
         </div>
       </div>
     </div>

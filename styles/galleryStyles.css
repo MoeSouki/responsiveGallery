@@ -73,3 +73,25 @@
   background-color: #183d3d;
   color: white;
 }
+
+.topnav .logout-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px 16px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: rgb(190, 185, 185);
+  border: none;
+}
+
+#welcome-message {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}

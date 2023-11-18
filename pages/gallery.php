@@ -1,3 +1,22 @@
+<?php
+session_start();
+if (isset($_SESSION['user'])) {
+  $welcomeMsg = '<span id="welcome-message">Welcome, ' . $_SESSION['user']['first_name'] . '!</span>';
+  $logoutButton = '<form action="#" method="post" class="logout-form"><button type="submit" name="logout">Logout</button></form>';
+
+} else {
+  $welcomeMsg = "";
+  $logoutButton = "";
+}
+
+if (isset($_POST['logout'])) {
+  session_destroy();
+  header("Location: index.php");
+  exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +27,15 @@
 </head>
 <body>
 <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="../cv.html">CV</a>
+      <a href="index.php">Home</a>
+      <a href="cv.html">CV</a>
       <a class="active" href="gallery.php">Gallery</a>
-      <a href="../contact-me.html">Contact Me</a>
+      <a href="contact-me.html">Contact Me</a>
+        <?php
+        echo "$welcomeMsg";
+        echo "$logoutButton"; ?>
 </div>
+<h1 style="text-align:center; margin-bottom:20px;">Mohamad's Image Gallery</h1>
 <div id="gallery">
     <?php
     $jsonPath = '../paths.json';
