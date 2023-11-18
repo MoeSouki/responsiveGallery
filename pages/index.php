@@ -36,6 +36,7 @@
             <input type="text" placeholder="Username" name="username" />
             <input type="password" placeholder="Password" name="password" />
           </div>
+          <div id="space"></div>
           <button type="submit">Login</button>
         </form>
         <div id="member">

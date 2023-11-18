@@ -68,6 +68,7 @@
             <input type="radio" name="sex" value="female" /> Female
           </div>
           <br />
+          <div id="space"></div>
           <button onclick="submitForm()">Sign Up</button>
         </form>
         <div id="member">
