@@ -43,7 +43,7 @@
               $users[] = $userdata;
               file_put_contents("users.json", json_encode($users));
 
-              header("Location: index.html");
+              header("Location: ../index.html");
               exit();
             }
           }
@@ -72,7 +72,7 @@
           <button onclick="submitForm()">Sign Up</button>
         </form>
         <div id="member">
-          Already Signed Up? <a href="index.php">Login Here</a>
+          Already Signed Up? <a href="../index.php">Login Here</a>
         </div>
       </div>
     </div>

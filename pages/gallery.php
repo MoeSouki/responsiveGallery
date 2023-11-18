@@ -27,7 +27,7 @@ if (isset($_POST['logout'])) {
 </head>
 <body>
 <div class="topnav">
-      <a href="index.php">Home</a>
+      <a href="../index.php">Home</a>
       <a href="cv.html">CV</a>
       <a class="active" href="gallery.php">Gallery</a>
       <a href="contact-me.html">Contact Me</a>

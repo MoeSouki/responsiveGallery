@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/loginStyles.css" />
+    <link rel="stylesheet" href="styles/loginStyles.css" />
     <title>Login Page</title>
   </head>
   <body>
@@ -19,11 +19,11 @@
           if (empty($enteredUsername) || empty($enteredPassword)) {
             echo "<h1 style = 'color:red;'>Please enter both username and password.</h1>";
           } else {
-            $users = json_decode(file_get_contents("users.json"), true) ?? [];
+            $users = json_decode(file_get_contents("pages/users.json"), true) ?? [];
             foreach ($users as $user) {
               if ($user["username"] === $enteredUsername && $user["password"] === $enteredPassword) {
                 $_SESSION['user'] = $user;
-                header("Location: gallery.php");
+                header("Location: pages/gallery.php");
                 exit();
               }
             }
@@ -40,7 +40,7 @@
           <button type="submit">Login</button>
         </form>
         <div id="member">
-          Don't have an Account? <a href="signUp.php">Sign-Up Here</a>
+          Don't have an Account? <a href="pages/signUp.php">Sign-Up Here</a>
         </div>
       </div>
     </div>
